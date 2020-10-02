@@ -20,6 +20,8 @@ def primeiros_100_primos():
         if(primo):
             primos = primos + str(numero) + ","
             p += 1
+            if(p%20==0):
+                primos+="<br>"
         numero+=1
     return primos
 if __name__ == "__main__":
